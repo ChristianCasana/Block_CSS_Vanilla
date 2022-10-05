@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+:root {
+  --color1:#2192FF;
+  /* Este zindex es el más grande */
+  --zindexnavbar: 1000;
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-boxs;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 700;
+}
+
+.container_principal {
+  max-width: 900px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 80%);
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+  z-index: var(--zindexnavbar);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.navbar .menu {
+  margin-top: 1rem;
+}
+
+.navbar .menu li {
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  transition: opacity 0.5s;
+}
+
+.navbar .menu li a:hover {
+  opacity: 0.6;
+}
+
+.home .content_bg-home {
+  background-color: var(--color1);
+  height: 50vh;
+}
+
+.home .box_img-home {
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  position: relative;
+  top: -150px;
+}
+
+.home .box_img-home img {
+  width: 100%;
+}
+
+.home .box_info-home {
+  text-align: center;
+}
+
+.home .box_info-home .title-home {
+  font-size: 3rem;
+  position: relative;
+  top: -100px
+}
+
+.home .box_info-home .title-home span {
+  color: var(--color1);
+}
+
+.about {
+  font-size: 1.5rem;
+  padding: 1em;
+  text-align: justify;
+}
+
+.about p {
+  margin: 1rem 0;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills svg {
+  fill: var(--color1)
+}
+
+.title-skills {
+  margin-bottom: 1rem;
+}
+
+.contact {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+form .box-input > * {
+  display: block
+}
+
+form .submit,
+form .reset {
+  background-color: var(--color1);
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: var(--color1);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
